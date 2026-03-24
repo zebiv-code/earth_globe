@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth Globe — heyman.ai</title>
+<link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="overlay"></canvas>
+
+<header>
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Search for a city...">
+    <button id="searchBtn">Search</button>
+    <div id="searchResults"></div>
+  </div>
+</header>
+
+<div class="panel">
+  <button class="btn" style="width:100%;margin-bottom:0.75rem" id="resetBtn">Reset View</button>
+  <label>Month</label>
+  <select id="month"></select>
+  <label>Hour</label>
+  <div class="row">
+    <select id="hour"></select>
+    <button class="btn active" id="timeToggle" title="Toggle real-time">&#9201;</button>
+  </div>
+  <label>Cities: <span id="cityCountLabel">100</span></label>
+  <input type="range" id="cityCount" min="10" max="1000" step="10" value="100">
+  <div class="check-row"><input type="checkbox" id="showCustom" checked><span>Show Custom Cities</span></div>
+  <div class="check-row"><input type="checkbox" id="showLabels" checked><span>Show Labels</span></div>
+</div>
+
+<div id="cityInfo">
+  <button id="cityClose">&times;</button>
+  <h3 id="ciName"></h3>
+  <p id="ciCountry"></p>
+  <p id="ciLocation"></p>
+  <p id="ciPop"></p>
+</div>
+
+<script src="js/cities.js"></script>
+<script src="js/shaders.js"></script>
+<script src="js/math.js"></script>
+<script src="js/globe.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "earth-globe",
+  "version": "1.0.0",
+  "description": "Interactive 3D Earth with day/night cycle, 100+ cities, and location search.",
+  "author": "Bill Heyman <bill@heyman.ai> (https://billheyman.com)",
+  "license": "MIT",
+  "homepage": "https://zebiv.com/earth-globe/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zebiv-code/earth_globe/"
+  },
+  "scripts": {
+    "start": "npx serve web -l 3000"
+  }
+}
